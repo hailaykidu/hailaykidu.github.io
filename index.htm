@@ -2,131 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Hailay Kidu Teklehaymanot | PhD Researcher in Multilingual NLP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hailay Kidu Teklehaymanot | PhD Researcher in NLP</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+        nav { background: #111; padding: 10px 0; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        header { text-align: center; padding: 40px 20px; background: #f4f4f4; }
+        .profile-pic { width: 160px; border-radius: 50%; }
+        section { display: none; padding: 40px 20px; max-width: 900px; margin: auto; }
+        section.active { display: block; }
+        h2 { border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        footer { text-align: center; padding: 20px; background: #f4f4f4; margin-top: 40px; }
+        .cv-button { background: #111; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        .cv-button:hover { background: #333; }
+    </style>
+
+    <script>
+        function showSection(id) {
+            var sections = document.querySelectorAll("section");
+            sections.forEach(section => section.classList.remove("active"));
+            document.getElementById(id).classList.add("active");
+        }
+
+        window.onload = function() {
+            showSection("about");
+        }
+    </script>
 </head>
 
 <body>
 
-<!-- Navigation -->
 <nav>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('research')">Research</a>
+    <a href="#" onclick="showSection('experience')">Experience</a>
+    <a href="#" onclick="showSection('service')">Academic Service</a>
+    <a href="#" onclick="showSection('contact')">Contact</a>
 </nav>
 
-<!-- Header -->
 <header>
     <img src="images/profile.jpg" alt="Profile Photo" class="profile-pic">
     <h1>Hailay Kidu Teklehaymanot</h1>
-    <p>PhD Candidate · Multilingual NLP · Low‑Resource Languages · RAG Systems</p>
+    <p>PhD Candidate in Multilingual Natural Language Processing · Low-Resource Languages · Retrieval-Augmented Generation</p>
 </header>
 
-<!-- ABOUT -->
 <section id="about">
-    <h2>About Me</h2>
-
-    <p>🎓 I am a PhD student at <strong>Leibniz University of Hannover (L3S Research Center)</strong>, supervised by Prof. Wolfgang Nejdl.</p>
-
-    <p>📘 I also work as a <strong>Research Associate</strong> at the <strong>Theological Faculty of the University of Zurich (UZH)</strong>, Switzerland.</p>
-
-    <p>🏫 Previously, I studied at <strong>Beijing University of Technology</strong> and served as an <strong>Assistant Professor at Mekelle University</strong>, Ethiopia.</p>
-
-    <p>🔬 My research focuses on <strong>Natural Language Processing (NLP)</strong>, <strong>Multilingual LLMs</strong>, and <strong>Retrieval‑Augmented Generation (RAG)</strong>, with a passion for building language technologies for underrepresented and morphologically rich languages.</p>
-
-    <p>🌍 I am deeply passionate about <strong>language technology, information searching, and equitable AI</strong>.</p>
-
+    <h2>About</h2>
     <p>
-        👉 <a href="cv.pdf" target="_blank" class="cv-button">Download My CV (PDF)</a>
+        I am a PhD Candidate at the L3S Research Center, 
+        <strong>Leibniz University Hannover</strong>, Germany, supervised by Prof. Wolfgang Nejdl.
+    </p>
+    <p>
+        My research focuses on Multilingual NLP, morphology-aware modeling, 
+        retrieval-augmented generation (RAG), and building equitable AI systems 
+        for underrepresented and morphologically rich languages.
+    </p>
+    <p>
+        I previously conducted doctoral research at 
+        <strong>Beijing University of Technology</strong> and served as 
+        Assistant Professor at <strong>Mekelle University</strong>, Ethiopia.
+    </p>
+    <p>
+        <a href="cv.pdf" target="_blank" class="cv-button">Download CV (PDF)</a>
     </p>
 </section>
 
-<!-- RESEARCH -->
 <section id="research">
     <h2>Research Interests</h2>
     <ul>
-        <li>Natural Language Processing (NLP)</li>
-        <li>Multilingual & Low‑Resource LLMs</li>
-        <li>Retrieval‑Augmented Generation (RAG)</li>
-        <li>Language Technology</li>
+        <li>Multilingual & Low-Resource Large Language Models</li>
+        <li>Morphology-Aware Tokenization and Modeling</li>
+        <li>Retrieval-Augmented Generation (RAG)</li>
+        <li>Information Retrieval for Morphologically Rich Languages</li>
+        <li>Equitable and Inclusive AI Systems</li>
     </ul>
 
     <p>
-        📚 <strong>Google Scholar:</strong>  
-        <a href="https://scholar.google.de/citations?user=DMFcxpgAAAAJ&hl=en&oi=ao/" target="_blank">View my publications</a>
+        <strong>Google Scholar:</strong><br>
+        <a href="https://scholar.google.de/citations?user=DMFcxpgAAAAJ&hl=en" target="_blank">
+            View Publications
+        </a>
     </p>
 </section>
 
-<!-- EXPERIENCE -->
 <section id="experience">
-    <h2>Experience</h2>
+    <h2>Academic & Professional Experience</h2>
 
-    <h3>PhD Candidate — L3S Research Center, Leibniz University Hannover</h3>
+    <h3>PhD Candidate — Leibniz University Hannover (L3S Research Center)</h3>
     <p>
-        PhD candidate in Multilingual Natural Language Processing and Low-Resource Language Modeling. 
-        My doctoral research began at Beijing University of Technology and later continued at L3S, 
-        focusing on morphology-aware modeling, retrieval-augmented generation (RAG), and linguistically grounded approaches for underrepresented languages.
+        Doctoral research in multilingual NLP, low-resource language modeling,
+        morphology-aware tokenization, and RAG architectures.
     </p>
 
     <h3>PhD Researcher — Beijing University of Technology</h3>
     <p>
-        Initiated doctoral research in Computational NLP and AI for Social Good, 
-        working on applications such as fake news detection, hate speech detection, 
-        and socially responsible language technologies.
+        Research in NLP for social good, including fake news detection, hate speech analysis,
+        and responsible AI systems.
     </p>
 
     <h3>Research Associate — University of Zurich (UZH)</h3>
     <p>
-        Applied Natural Language Processing methods in digital humanities research, 
-        analyzing historical texts and contributing to interdisciplinary projects 
-        at the intersection of computational linguistics and humanities scholarship.
+        Applied computational NLP methods in digital humanities research,
+        contributing to interdisciplinary text analysis projects.
     </p>
 
     <h3>Assistant Professor — Mekelle University</h3>
     <p>
-        Taught courses in Information Retrieval, Natural Language Processing, and Algorithms. 
-        Supervised MSc theses, particularly in Amharic NLP, and mentored undergraduate 
-        and postgraduate Computer Science students.
-    </p>
-
-    <h3>Lecturer — University of Gondar & Adigrat University, Ethiopia</h3>
-    <p>
-        Delivered undergraduate Computer Science courses and contributed to curriculum development 
-        and academic mentorship.
-    </p>
-
-    <h3>Owner & Managing Director — SMH Electronics and Engineering PLC, Ethiopia</h3>
-    <p>
-        Founded and managed a technology-focused company, overseeing operations, 
-        strategic planning, and engineering services.
+        Taught Information Retrieval, NLP, and Algorithms.
+        Supervised MSc theses in Amharic NLP and related areas.
     </p>
 </section>
-<!-- INTERESTS -->
-<section id="interests">
-    <h2>Interests</h2>
+
+<section id="service">
+    <h2>Academic Service</h2>
+
+    <p><strong>Reviewer for:</strong></p>
+
     <ul>
-        <li>Swimming</li>
-        <li>Baking</li>
-        <li>Playing musical instruments</li>
-        <li>Day trips</li>
-        <li>Listening to cultural music</li>
+        <li>International Journal of Data Science and Analysis</li>
+        <li>International Journal of Interactive Mobile Technologies (iJIM)</li>
     </ul>
 
-    <h3>Languages</h3>
-    <ul>
-        <li>Tigrinya & Amharic — Native</li>
-        <li>English — Professional proficiency</li>
-        <li>German — Basic level</li>
-        <li>Chinese — Very basic</li>
-    </ul>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:teklehaymanot@L3S.de">teklehaymanot@L3S.de</a></p>
@@ -134,7 +136,7 @@
 </section>
 
 <footer>
-    <p>© 2025 Hailay Kidu Teklehaymanot</p>
+    <p>© 2026 Hailay Kidu Teklehaymanot</p>
 </footer>
 
 </body>
