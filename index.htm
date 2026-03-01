@@ -1,90 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hailay Kidu Teklehaymanot</title>
-
-<style>
-/* ===== General ===== */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-}
-
-/* ===== Sidebar ===== */
-.sidebar {
-  width: 280px;
-  background: #f7f7f7;
-  padding: 30px 20px;
-  height: 100vh;
-  position: fixed;
-  overflow-y: auto;
-  border-right: 1px solid #e0e0e0;
-  text-align: center;
-}
-
-.sidebar img {
-  width: 140px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-.sidebar h1 {
-  font-size: 20px;
-  margin: 5px 0;
-}
-
-.sidebar .local-name {
-  font-size: 16px;
-  color: #666;
-}
-
-.sidebar p {
-  font-size: 14px;
-  margin: 8px 0;
-}
-
-.sidebar a {
-  display: block;
-  color: #1a73e8;
-  text-decoration: none;
-  margin: 5px 0;
-  font-size: 14px;
-}
-
-.sidebar a:hover {
-  text-decoration: underline;
-}
-
-.sidebar hr {
-  margin: 20px 0;
-}
-
-/* ===== Main Content ===== */
-.content {
-  margin-left: 300px;
-  padding: 40px;
-  max-width: 900px;
-}
-
-.content h2 {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
-  margin-top: 40px;
-}
-
-.content ul {
-  margin-left: 20px;
-}
-
-footer {
-  margin-top: 60px;
-  font-size: 13px;
-  color: #777;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hailay Kidu Teklehaymanot</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -92,17 +12,17 @@ footer {
 <!-- ===== Sidebar (Fixed) ===== -->
 <div class="sidebar">
   <img src="images/profile.jpg" alt="Hailay Kidu Teklehaymanot">
-  
+
   <h1>Hailay Kidu Teklehaymanot<br>
-  <span class="local-name">ሃይላይ ኪዱ ተክለሃይማኖት</span>
+    <span class="local-name">ሃይላይ ኪዱ ተክለሃይማኖት</span>
   </h1>
 
   <p>PhD Candidate in Computer Science<br>
-  Multilingual NLP · Information Retrieval · Equitable AI
+    Multilingual NLP · Information Retrieval · Equitable AI
   </p>
 
   <p>L3S Research Center<br>
-  Leibniz University Hannover
+    Leibniz University Hannover
   </p>
 
   <a href="mailto:teklehaymanot@L3S.de">Email</a>
@@ -110,11 +30,12 @@ footer {
   <a href="https://orcid.org/0000-0003-2360-3448">ORCID</a>
   <a href="https://www.researchgate.net/profile/Hailay-Teklehaymanot">ResearchGate</a>
   <a href="https://www.linkedin.com/in/hailay-kidu-teklehaymanot-679872328/">LinkedIn</a>
-  
-  <a href="files/Hailay_CV.pdf" download><strong>Download CV</strong></a>
-  <hr>
 
-  <!-- Menu -->
+  <a href="files/Hailay_CV.pdf" download><strong>Download CV</strong></a>
+</div>
+
+<!-- ===== Top Horizontal Menu ===== -->
+<div class="topnav">
   <a href="#about">About</a>
   <a href="#publications">Publications</a>
   <a href="#talks">Talks</a>
@@ -123,23 +44,24 @@ footer {
   <a href="#blog">Blog Posts</a>
 </div>
 
-<!-- ===== Main Scrollable Content ===== -->
+<!-- ===== Main Content ===== -->
 <div class="content">
+
   <section id="about">
     <h2>About</h2>
     <p>
-      I am a PhD candidate at the L3S Research Center, Leibniz University Hannover, Germany. 
-      My research focuses on multilingual and low-resource natural language processing, 
-      morphology-aware modeling, retrieval-augmented generation, and information retrieval 
+      I am a PhD candidate at the L3S Research Center, Leibniz University Hannover, Germany.
+      My research focuses on multilingual and low-resource natural language processing,
+      morphology-aware modeling, retrieval-augmented generation, and information retrieval
       for underrepresented languages.
     </p>
     <p>
-      My work aims to advance linguistically informed large language models and equitable AI systems 
+      My work aims to advance linguistically informed large language models and equitable AI systems
       that improve knowledge access, cross-lingual understanding, and digital inclusion across diverse global communities.
     </p>
     <p>
-      Previously, I conducted doctoral research at Beijing University of Technology on fake news detection 
-      and sarcasm detection. I also served as an Assistant Professor at Mekelle University 
+      Previously, I conducted doctoral research at Beijing University of Technology on fake news detection
+      and sarcasm detection. I also served as an Assistant Professor at Mekelle University
       and as a Lecturer at the University of Gondar.
     </p>
   </section>
@@ -184,8 +106,9 @@ footer {
     <hr>
     <p><a href="#">Sitemap</a></p>
     <p>Follow: <a href="https://github.com/YOUR_GITHUB_USERNAME">GitHub Feed</a></p>
-    <p>© 2025 Hailay Kidu Teklehaymanot. Powered by Jekyll & AcademicPages, a fork of Minimal Mistakes.</p>
+    <p>© 2025 Hailay Kidu Teklehaymanot. Powered by Jekyll & AcademicPages.</p>
   </footer>
+
 </div>
 
 </body>
