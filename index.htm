@@ -6,6 +6,7 @@
 <title>Hailay Kidu Teklehaymanot</title>
 
 <style>
+/* ===== General ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -21,11 +22,18 @@ body {
   position: fixed;
   overflow-y: auto;
   border-right: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.sidebar img {
+  width: 140px;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 .sidebar h1 {
   font-size: 20px;
-  margin-bottom: 5px;
+  margin: 5px 0;
 }
 
 .sidebar .local-name {
@@ -50,6 +58,10 @@ body {
   text-decoration: underline;
 }
 
+.sidebar hr {
+  margin: 20px 0;
+}
+
 /* ===== Main Content ===== */
 .content {
   margin-left: 300px;
@@ -61,6 +73,10 @@ body {
   border-bottom: 1px solid #ddd;
   padding-bottom: 5px;
   margin-top: 40px;
+}
+
+.content ul {
+  margin-left: 20px;
 }
 
 footer {
@@ -75,98 +91,101 @@ footer {
 
 <!-- ===== Sidebar (Fixed) ===== -->
 <div class="sidebar">
+  <img src="images/profile.jpg" alt="Hailay Kidu Teklehaymanot">
+  
+  <h1>Hailay Kidu Teklehaymanot<br>
+  <span class="local-name">ሃይላይ ኪዱ ተክለሃይማኖት</span>
+  </h1>
 
-<h1>
-Hailay Kidu Teklehaymanot<br>
-<span class="local-name">ሃይላይ ኪዱ ተክለሃይማኖት</span>
-</h1>
+  <p>PhD Candidate in Computer Science<br>
+  Multilingual NLP · Information Retrieval · Equitable AI
+  </p>
 
-<p>
-PhD Candidate in Computer Science<br>
-Multilingual NLP · Information Retrieval · Equitable AI
-</p>
+  <p>L3S Research Center<br>
+  Leibniz University Hannover
+  </p>
 
-<p>
-L3S Research Center<br>
-Leibniz University Hannover
-</p>
+  <a href="mailto:teklehaymanot@L3S.de">Email</a>
+  <a href="https://scholar.google.com/citations?user=DMFcxpgAAAAJ&hl=de&oi=ao">Google Scholar</a>
+  <a href="https://orcid.org/0000-0003-2360-3448">ORCID</a>
+  <a href="https://www.researchgate.net/profile/Hailay-Teklehaymanot">ResearchGate</a>
+  <a href="https://www.linkedin.com/in/hailay-kidu-teklehaymanot-679872328/">LinkedIn</a>
+  
+  <a href="files/Hailay_CV.pdf" download><strong>Download CV</strong></a>
+  <hr>
 
-<a href="mailto:teklehaymanot@L3S.de">Email</a>
-<a href="https://scholar.google.com/citations?user=DMFcxpgAAAAJ&hl=de&oi=ao">Google Scholar</a>
-<a href="https://orcid.org/0000-0003-2360-3448">ORCID</a>
-<a href="https://www.researchgate.net/profile/Hailay-Teklehaymanot">ResearchGate</a>
-<a href="https://www.linkedin.com/in/hailay-kidu-teklehaymanot-679872328/">LinkedIn</a>
-
-<a href="files/Hailay_CV.pdf" download><strong>Download CV</strong></a>
-
+  <!-- Menu -->
+  <a href="#about">About</a>
+  <a href="#publications">Publications</a>
+  <a href="#talks">Talks</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#projects">Personal Projects</a>
+  <a href="#blog">Blog Posts</a>
 </div>
-
 
 <!-- ===== Main Scrollable Content ===== -->
 <div class="content">
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I am a PhD candidate at the L3S Research Center, Leibniz University Hannover, Germany. 
+      My research focuses on multilingual and low-resource natural language processing, 
+      morphology-aware modeling, retrieval-augmented generation, and information retrieval 
+      for underrepresented languages.
+    </p>
+    <p>
+      My work aims to advance linguistically informed large language models and equitable AI systems 
+      that improve knowledge access, cross-lingual understanding, and digital inclusion across diverse global communities.
+    </p>
+    <p>
+      Previously, I conducted doctoral research at Beijing University of Technology on fake news detection 
+      and sarcasm detection. I also served as an Assistant Professor at Mekelle University 
+      and as a Lecturer at the University of Gondar.
+    </p>
+  </section>
 
-<h2>About</h2>
+  <section id="research">
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Multilingual & Low-Resource Large Language Models</li>
+      <li>Morphology-Aware Natural Language Processing</li>
+      <li>Retrieval-Augmented Generation</li>
+      <li>Information Retrieval</li>
+      <li>Equitable and Inclusive Artificial Intelligence</li>
+    </ul>
+  </section>
 
-<p>
-I am a PhD candidate at the L3S Research Center, Leibniz University Hannover, Germany. My research focuses on multilingual and low-resource natural language processing, morphology-aware modeling, retrieval-augmented generation, and information retrieval for underrepresented languages.
-</p>
+  <section id="publications">
+    <h2>Publications</h2>
+    <p>See full list on <a href="https://scholar.google.com/citations?user=DMFcxpgAAAAJ&hl=de&oi=ao" target="_blank">Google Scholar</a>.</p>
+  </section>
 
-<p>
-My work aims to advance linguistically informed large language models and equitable AI systems that improve knowledge access, cross-lingual understanding, and digital inclusion across diverse global communities.
-</p>
+  <section id="talks">
+    <h2>Talks</h2>
+    <p>Invited talks, conference presentations, and workshops.</p>
+  </section>
 
-<p>
-Previously, I conducted doctoral research at Beijing University of Technology on computational NLP topics including fake news detection and sarcasm detection. I also served as an Assistant Professor at Mekelle University and as a Lecturer at the University of Gondar.
-</p>
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <p>Courses taught, supervision, and mentoring activities.</p>
+  </section>
 
+  <section id="projects">
+    <h2>Personal Projects</h2>
+    <p>Open-source tools, research software, and technology initiatives.</p>
+  </section>
 
-<h2>Research Interests</h2>
+  <section id="blog">
+    <h2>Blog Posts</h2>
+    <p>Research insights and technical reflections on multilingual AI.</p>
+  </section>
 
-<ul>
-<li>Multilingual & Low-Resource Large Language Models</li>
-<li>Morphology-Aware Natural Language Processing</li>
-<li>Retrieval-Augmented Generation</li>
-<li>Information Retrieval</li>
-<li>Equitable and Inclusive Artificial Intelligence</li>
-</ul>
-
-
-<h2>Publications</h2>
-<p>See full list on Google Scholar.</p>
-
-
-<h2>Talks</h2>
-<p>Invited talks, conference presentations, and workshops.</p>
-
-
-<h2>Teaching</h2>
-<p>Courses taught, supervision, and mentoring activities.</p>
-
-
-<h2>Personal Projects</h2>
-<p>Open-source tools, research software, and technology initiatives.</p>
-
-
-<h2>Blog Posts</h2>
-<p>Research insights and technical reflections on multilingual AI.</p>
-
-
-<footer>
-<hr>
-<p>
-<a href="#">Sitemap</a>
-</p>
-
-<p>
-Follow: <a href="https://github.com/YOUR_GITHUB_USERNAME">GitHub Feed</a>
-</p>
-
-<p>
-© 2025 Hailay Kidu Teklehaymanot. Powered by Jekyll & AcademicPages, a fork of Minimal Mistakes.
-</p>
-
-</footer>
-
+  <footer>
+    <hr>
+    <p><a href="#">Sitemap</a></p>
+    <p>Follow: <a href="https://github.com/YOUR_GITHUB_USERNAME">GitHub Feed</a></p>
+    <p>© 2025 Hailay Kidu Teklehaymanot. Powered by Jekyll & AcademicPages, a fork of Minimal Mistakes.</p>
+  </footer>
 </div>
 
 </body>
