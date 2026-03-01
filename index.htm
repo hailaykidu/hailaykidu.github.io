@@ -1,154 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Hailay Kidu Teklehaymanot | PhD Researcher in Multilingual NLP</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hailay Kidu Teklehaymanot</title>
 
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-        nav { background: #111; padding: 10px 0; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-        header { text-align: center; padding: 40px 20px; background: #f4f4f4; }
-        .profile-pic { width: 160px; border-radius: 50%; }
-        section { display: none; padding: 40px 20px; max-width: 900px; margin: auto; }
-        section.active { display: block; }
-        h2 { border-bottom: 2px solid #ddd; padding-bottom: 10px; }
-        footer { text-align: center; padding: 20px; background: #f4f4f4; margin-top: 40px; }
-        .poster { margin-top: 20px; }
-        .poster img { max-width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); }
-    </style>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7;
+    padding: 20px;
+    color: #222;
+}
 
-    <script>
-        function showSection(id) {
-            var sections = document.querySelectorAll("section");
-            sections.forEach(section => section.classList.remove("active"));
-            document.getElementById(id).classList.add("active");
-        }
-        window.onload = function() {
-            showSection("about");
-        }
-    </script>
+/* ===== Header ===== */
+h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.local {
+    font-size: 20px;
+    color: #666;
+}
+
+.tagline {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* ===== Menu ===== */
+.menu {
+    margin: 15px 0 25px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1a73e8;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Sections ===== */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* ===== Profile ===== */
+.profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile img {
+    width: 140px;
+    border-radius: 8px;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    color: #777;
+    margin-top: 50px;
+}
+</style>
 </head>
 
 <body>
 
-<nav>
-    <a href="#" onclick="showSection('about')">About</a>
-    <a href="#" onclick="showSection('research')">Research</a>
-    <a href="#" onclick="showSection('experience')">Experience</a>
-    <a href="#" onclick="showSection('service')">Academic Service</a>
-    <a href="#" onclick="showSection('contact')">Contact</a>
-</nav>
+<!-- ===== Name ===== -->
+<h1>
+Hailay Kidu Teklehaymanot 
+<span class="local">| ሃይላይ ኪዱ ተክለሃይማኖት</span>
+</h1>
 
-<header>
-    <img src="images/personal.jpg" alt="Profile Photo" class="profile-pic">
-    <h1>Hailay Kidu Teklehaymanot</h1>
-    <p>PhD Candidate · Multilingual NLP · Low-Resource Languages · Retrieval-Augmented Generation</p>
-</header>
+<p class="tagline">
+PhD Candidate · Multilingual NLP · Low-Resource Languages · Retrieval-Augmented Generation
+</p>
 
+<!-- ===== Menu ===== -->
+<div class="menu">
+<a href="#about">About</a>
+<a href="#publications">Publications</a>
+<a href="#talks">Talks</a>
+<a href="#teaching">Teaching</a>
+<a href="#projects">Projects</a>
+<a href="#blog">Blog</a>
+<a href="files/Hailay_CV.pdf" download>CV</a>
+</div>
+
+<!-- ===== About ===== -->
 <section id="about">
-    <h2>About</h2>
-    <p>
-        I am a PhD Candidate at the <a href="https://www.l3s.de/" target="_blank" style="color:#1a73e8; font-weight:600;">L3S Research Center, Leibniz University Hannover</a>, Germany. My research focuses on multilingual Natural Language Processing, Information Retrieval, and morphology-aware modeling for low-resource and underrepresented languages.
-    </p>
-    <p>
-        My work advances NLP solutions for low-resource languages by developing linguistically informed large language model representations and deploying them effectively in data-limited environments. This contributes to scalable and equitable AI systems that overcome linguistic barriers, improve cross-lingual understanding, and support impactful real-world applications across diverse global contexts.
-    </p>
-    <p>
-        I previously conducted doctoral research at the <a href="https://www.bjut.edu.cn/" target="_blank" style="color:#1a73e8; font-weight:600;">Beijing University of Technology</a>, where I worked on computational NLP topics including fake news detection and sarcasm detection. I also served as an Assistant Professor at <a href="https://www.mu.edu.et/" target="_blank" style="color:#1a73e8; font-weight:600;">Mekelle University</a>.
-    </p>
-    <p>
-        In addition, I worked as a Lecturer at <a href="https://uog.edu.et/" target="_blank" style="color:#1a73e8; font-weight:600;">University of Gondar</a>, Ethiopia, and as a Data Analyst at <a href="https://cybersoft-intl.net/" target="_blank" style="color:#1a73e8; font-weight:600;">Cybersoft Company</a>, gaining experience in data-driven solutions and applied analytics.
-    </p>
-    <p>
-        I also continue to work as a Research Associate at the 
-        <a href="https://www.theologie.uzh.ch/de/faecher/altes-testament/at_altorientalisch/team/research_associates/teklehaymanot.html" target="_blank" style="color:#1a73e8; font-weight:600;">University of Zurich</a>, contributing to interdisciplinary research in computational linguistics and digital humanities.
-    </p>
-    <p>
-        I am passionate about teaching and mentoring students, guiding them to explore and succeed in the fields of NLP, IR, and AI. In my free time, I enjoy cycling and swimming.
-    </p>
-</section>
 
-<section id="research">
-    <h2>Research Interests</h2>
-    <ul>
-        <li>Multilingual & Low-Resource LLMs</li>
-        <li>Morphology-Aware NLP</li>
-        <li>Retrieval-Augmented Generation</li>
-        <li>Information Retrieval</li>
-        <li>Equitable AI</li>
-    </ul>
-</section>
+<div class="profile">
+<img src="images/personal.jpg">
 
-<section id="experience">
-    <h2>Academic & Professional Experience</h2>
-    <h3>PhD Candidate — Leibniz University Hannover</h3>
-    <p>Multilingual NLP and low-resource language modeling.</p>
-</section>
+<div>
+<p>
+I am a PhD candidate at the L3S Research Center, Leibniz University Hannover, Germany. My research focuses on multilingual natural language processing, morphology-aware modeling, retrieval-augmented generation, and information retrieval for low-resource and underrepresented languages.
+</p>
 
-<section id="service">
-    <h2>Academic Service & Leadership</h2>
+<p>
+My work aims to develop linguistically informed large language models and scalable AI systems that improve knowledge access, cross-lingual understanding, and equitable technology for diverse global communities.
+</p>
 
-    <h3>Conference Organizing Committee</h3>
-    <p>
-        I am a member of the Organizing Committee of the 
-        <strong>
-            <a href="https://www.mu.edu.et/index.php/ai4sd2026" target="_blank" style="color:#1a73e8; font-weight:600;">
-                International Conference on AI for Sustainable Development in Africa (AI4SD 2026)
-            </a>
-        </strong> hosted by Mekelle University.
-    </p>
+<p>
+Previously, I conducted doctoral research at Beijing University of Technology on computational NLP topics including fake news detection and sarcasm detection. I also served as an Assistant Professor at Mekelle University and worked as a Lecturer at the University of Gondar.
+</p>
 
-    <ul>
-        <li>
-            <a href="https://www.mu.edu.et/index.php/component/content/article/call-for-papers-ai-for-sustainable-development-in-africa-ai4sd-2026" target="_blank" style="color:#1a73e8;">
-                Official Call for Papers Announcement
-            </a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7425936011274207232" target="_blank" style="color:#1a73e8;">
-                LinkedIn Announcement
-            </a>
-        </li>
-    </ul>
+<p>
+I am passionate about inclusive AI, interdisciplinary research, mentoring, and open science.
+</p>
 
-    <div class="poster">
-        <p><strong>Conference Poster:</strong></p>
-        <img src="images/ai4sd_poster.jpg" alt="AI4SD Conference Poster">
-    </div>
+<p>
+📧 Email: teklehaymanot@L3S.de <br>
+📍 Hannover, Germany
+</p>
 
-    <h3>Journal Reviewer</h3>
-    <ul>
-        <li>
-            <a href="https://www.lidsen.com/journals/dsa" target="_blank" style="color:#1a73e8;">
-                International Journal of Data Science and Analysis
-            </a>
-        </li>
-        <li>
-            <a href="https://online-journals.org/index.php/i-jim" target="_blank" style="color:#1a73e8;">
-                International Journal of Interactive Mobile Technologies (iJIM)
-            </a>
-        </li>
-    </ul>
+<p>
+<a href="https://scholar.google.com/citations?user=DMFcxpgAAAAJ&hl=de&oi=ao">Google Scholar</a> |
+<a href="https://www.researchgate.net/profile/Hailay-Teklehaymanot">ResearchGate</a> |
+<a href="https://orcid.org/0000-0003-2360-3448">ORCID</a> |
+<a href="https://www.linkedin.com/in/hailay-kidu-teklehaymanot-679872328/">LinkedIn</a>
+</p>
+
+</div>
+</div>
 
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:teklehaymanot@L3S.de" style="color:#1a73e8;">teklehaymanot@L3S.de</a></p>
-    <p>Location: Hannover, Germany</p>
-    <p>
-        <strong>Contact Address:</strong><br>
-        L3S Research Center<br>
-        Appelstr. 4a · 30167 Hannover<br>
-        2nd Floor
-    </p>
+<!-- ===== Publications ===== -->
+<section id="publications">
+<h2>Publications</h2>
+<p>Selected publications. Full list available on Google Scholar.</p>
+</section>
+
+<!-- ===== Talks ===== -->
+<section id="talks">
+<h2>Talks</h2>
+<p>Conference presentations, invited talks, and workshops.</p>
+</section>
+
+<!-- ===== Teaching ===== -->
+<section id="teaching">
+<h2>Teaching</h2>
+<p>Courses taught, supervision, and mentoring.</p>
+</section>
+
+<!-- ===== Projects ===== -->
+<section id="projects">
+<h2>Personal Projects</h2>
+<p>Research software, open-source projects, and technology initiatives.</p>
+</section>
+
+<!-- ===== Blog ===== -->
+<section id="blog">
+<h2>Blog</h2>
+<p>Insights, tutorials, and thoughts on multilingual AI.</p>
 </section>
 
 <footer>
-    <p>© 2026 Hailay Kidu Teklehaymanot</p>
+<p>© 2026 Hailay Kidu Teklehaymanot</p>
 </footer>
 
 </body>
