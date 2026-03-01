@@ -65,6 +65,15 @@ body {
   padding-bottom: 10px;
 }
 
+.section-menu {
+  display: flex;
+  justify-content: center;   /* centers the menu */
+  gap: 25px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
 .section-menu a {
   text-decoration: none;
   color: #1a73e8;
@@ -75,6 +84,7 @@ body {
 .section-menu a:hover {
   text-decoration: underline;
 }
+
 
 /* ===== Content Sections ===== */
 .content h2 {
