@@ -39,7 +39,6 @@ body {
   margin: 8px 0;
 }
 
-/* Sidebar links */
 .sidebar a {
   display: block;
   color: #1a73e8;
@@ -55,18 +54,16 @@ body {
 /* ===== FIXED CV BUTTON ===== */
 .sidebar a.button {
   display: block;
-  width: 100%;
   text-align: center;
   background-color: #1a73e8;
-  color: #ffffff !important;   /* force visibility */
+  color: #ffffff !important;   /* FIX: force visible white text */
   font-weight: bold;
   font-size: 15px;
   padding: 12px 0;
   border-radius: 6px;
-  margin-top: 18px;
+  margin-top: 15px;
   text-decoration: none;
   border: 1px solid #1a73e8;
-  box-sizing: border-box;
 }
 
 .sidebar a.button:hover {
@@ -128,9 +125,9 @@ body {
   background: #1a73e8;
   color: #ffffff;
   font-weight: bold;
-  padding: 6px 12px;
+  padding: 5px 10px;
   border-radius: 4px;
-  margin-top: 8px;
+  margin-top: 5px;
   text-decoration: none;
 }
 
