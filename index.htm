@@ -6,221 +6,267 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+
+/* ===== General ===== */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   background: #ffffff;
+  color: #222;
 }
 
-/* ===== Navigation Bar ===== */
-nav {
-  background: #0d0d0d;
-  padding: 12px 0;
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 280px;
+  background: #f9f9f9;
+  padding: 30px 20px;
+  height: 100vh;
+  position: fixed;
+  overflow-y: auto;
+  border-right: 1px solid #e5e5e5;
   text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
-nav a {
-  color: white;
-  margin: 0 18px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* ===== Header ===== */
-header {
-  text-align: center;
-  padding: 40px 20px;
-  background: #f4f4f4;
-}
-
-.profile-pic {
-  width: 160px;
+.sidebar img {
+  width: 140px;
   border-radius: 50%;
   margin-bottom: 15px;
 }
 
-/* ===== Sections ===== */
-section {
-  display: none;
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
+.sidebar h1 {
+  font-size: 20px;
+  margin: 8px 0 4px;
 }
 
-section.active {
+.sidebar p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.sidebar a {
   display: block;
-}
-
-h2 {
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-/* ===== Footer ===== */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #f4f4f4;
-  margin-top: 40px;
+  color: #1a73e8;
+  text-decoration: none;
+  margin: 6px 0;
   font-size: 14px;
 }
 
-/* ===== Poster Image ===== */
-.poster {
-  margin-top: 20px;
+.sidebar a:hover {
+  text-decoration: underline;
 }
 
-.poster img {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+/* ===== Main Content ===== */
+.content {
+  margin-left: 280px;
+  padding: 50px 60px;
+  max-width: 950px;
 }
 
-/* ===== Button ===== */
-.cv-button {
+/* ===== Section Menu ===== */
+.section-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 12px;
+}
+
+.section-menu a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* ===== Sections ===== */
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+  margin-top: 40px;
+}
+
+/* ===== Publications ===== */
+.pub-container {
+  display: grid;
+  gap: 20px;
+}
+
+.pub-card {
+  padding: 18px;
+  border-radius: 10px;
+  background: #fafafa;
+  border: 1px solid #eee;
+}
+
+.pub-card h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+
+.venue {
+  font-size: 13px;
+  color: #666;
+}
+
+/* ===== Badges ===== */
+.badge {
   display: inline-block;
-  margin-top: 15px;
-  padding: 10px 18px;
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 20px;
+  background: #e0e0e0;
+  margin-top: 5px;
+}
+
+.badge.top { background: #ffcc00; }
+.badge.ieee { background: #0073e6; color: white; }
+.badge.journal { background: #2e7d32; color: white; }
+
+/* ===== Buttons ===== */
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
   background: #1a73e8;
   color: white;
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
+  border-radius: 5px;
+  font-size: 13px;
 }
 
-.cv-button:hover {
-  background: #0f5fcc;
+/* ===== Responsive ===== */
+@media screen and (max-width: 900px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
 }
+
 </style>
-
-<script>
-function showSection(id) {
-  var sections = document.querySelectorAll("section");
-  sections.forEach(section => section.classList.remove("active"));
-  document.getElementById(id).classList.add("active");
-}
-window.onload = function() {
-  showSection("about");
-}
-</script>
 </head>
 
 <body>
 
-<!-- ===== Navigation Menu ===== -->
-<nav>
-  <a href="#" onclick="showSection('about')">About</a>
-  <a href="#" onclick="showSection('research')">Research</a>
-  <a href="#" onclick="showSection('publications')">Publications</a>
-  <a href="#" onclick="showSection('experience')">Experience</a>
-  <a href="#" onclick="showSection('service')">Academic Service</a>
-  <a href="#" onclick="showSection('contact')">Contact</a>
-</nav>
-
-<!-- ===== Header ===== -->
-<header>
-  <img src="images/personal.jpg" alt="Profile Photo" class="profile-pic">
+<!-- ===== Sidebar ===== -->
+<div class="sidebar">
+  <img src="images/personal.jpg" alt="Profile Photo">
   <h1>Hailay Kidu Teklehaymanot</h1>
-  <p>PhD Candidate · Multilingual NLP · Low-Resource Languages · Retrieval-Augmented Generation</p>
+  <p>PhD Candidate · NLP · RAG</p>
 
-  <p>
-    <a href="https://scholar.google.com/citations?user=DMFcxpgAAAAJ" target="_blank">Google Scholar</a> ·
-    <a href="https://www.researchgate.net/profile/Hailay-Teklehaymanot" target="_blank">ResearchGate</a> ·
-    <a href="https://orcid.org/0000-0003-2360-3448" target="_blank">ORCID</a> ·
-    <a href="https://www.linkedin.com/in/hailay-kidu-teklehaymanot-679872328/" target="_blank">LinkedIn</a>
-  </p>
+  <a href="https://scholar.google.com/citations?user=DMFcxpgAAAAJ" target="_blank">Google Scholar</a>
+  <a href="https://www.researchgate.net/profile/Hailay-Teklehaymanot" target="_blank">ResearchGate</a>
+  <a href="https://orcid.org/0000-0003-2360-3448" target="_blank">ORCID</a>
+  <a href="https://www.linkedin.com/in/hailay-kidu-teklehaymanot-679872328/" target="_blank">LinkedIn</a>
 
-  <a class="cv-button" href="https://hailaykidu.github.io/cv.pdf" download="cv.pdf">Download CV</a>
-</header>
+  <a href="https://hailaykidu.github.io/cv.pdf" class="button">Download CV</a>
+</div>
 
-<!-- ===== ABOUT ===== -->
-<section id="about">
-  <h2>About</h2>
-  <p>
-    I am a PhD Candidate at the L3S Research Center, Leibniz University Hannover, Germany.
-    My research focuses on multilingual NLP, Information Retrieval, and morphology-aware modeling.
-  </p>
-</section>
+<!-- ===== Main Content ===== -->
+<div class="content">
 
-<!-- ===== RESEARCH ===== -->
-<section id="research">
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Multilingual & Low-Resource Large Language Models</li>
-    <li>Morphology-Aware NLP</li>
-    <li>Retrieval-Augmented Generation</li>
-    <li>Information Retrieval</li>
-    <li>Equitable and Inclusive AI</li>
-  </ul>
-</section>
+  <!-- Menu -->
+  <div class="section-menu">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#awards">Awards</a>
+    <a href="#service">Service</a>
+    <a href="#contact">Contact</a>
+  </div>
 
-<!-- ===== PUBLICATIONS ===== -->
-<section id="publications">
-  <h2>Publications & Projects</h2>
+  <!-- About -->
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I am a PhD candidate at L3S Research Center, Leibniz University Hannover.
+      My research focuses on multilingual NLP, low-resource languages, and retrieval-augmented generation.
+    </p>
+  </section>
 
-  <h3>MoVoC: Morpheme-Aware Tokenization</h3>
-  <p>
-    A tokenizer designed for Geez script languages to overcome limitations of standard BPE.
-  </p>
-  <a class="cv-button" href="https://hailaykidu.github.io/MoVoC/" target="_blank">
-    View Project
-  </a>
+  <!-- Research -->
+  <section id="research">
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Multilingual NLP</li>
+      <li>Low-Resource Language Modeling</li>
+      <li>Retrieval-Augmented Generation</li>
+      <li>Information Retrieval</li>
+    </ul>
+  </section>
 
-  <h3>LGSE Project</h3>
-  <p>
-    Low-resource multilingual system for scalable language engineering.
-  </p>
-  <a class="cv-button" href="https://hailaykidu.github.io/LGSE-Project-/" target="_blank">
-    View Project
-  </a>
+  <!-- Publications -->
+  <section id="publications">
+    <h2>Selected Publications</h2>
 
-</section>
+    <div class="pub-container">
 
-<!-- ===== EXPERIENCE ===== -->
-<section id="experience">
-  <h2>Experience</h2>
-  <p><strong>PhD Candidate</strong> — Leibniz University Hannover</p>
-  <p><strong>Assistant Professor</strong> — Mekelle University</p>
-  <p><strong>Lecturer</strong> — University of Gondar</p>
-</section>
+      <div class="pub-card">
+        <h3>MoVoC: Morphology-Aware Subword Construction for Ge’ez Script Languages</h3>
+        <p class="venue">EMNLP Findings 2025</p>
+        <span class="badge top">Top NLP</span><br>
+        <a href="https://hailaykidu.github.io/MoVoC/" class="button" target="_blank">Project</a>
+      </div>
 
-<!-- ===== SERVICE ===== -->
-<section id="service">
-  <h2>Academic Service</h2>
+      <div class="pub-card">
+        <h3>LGSE: Lexically Grounded Subword Embedding Initialization</h3>
+        <p class="venue">LREC 2026</p>
+        <a href="https://hailaykidu.github.io/LGSE-Project-/" class="button" target="_blank">Project</a>
+      </div>
 
-  <h3>Conference Organizer</h3>
-  <p>AI4SD 2026 Conference</p>
+      <div class="pub-card">
+        <h3>TIGQA Dataset</h3>
+        <p class="venue">LREC-COLING 2024</p>
+      </div>
 
-  <h3>Journal Reviewer</h3>
-  <p>International Journals in Data Science & Mobile Technologies</p>
+      <div class="pub-card">
+        <h3>Tokenization Disparities</h3>
+        <p class="venue">IEEE Xplore · FLLM 2025</p>
+        <span class="badge ieee">IEEE</span>
+      </div>
 
-  <h3>Certificate of Reviewing</h3>
-  <a class="cv-button" href="documents/Certificate_of_Reviewing.pdf" target="_blank">
-    View Certificate
-  </a>
-</section>
+    </div>
+  </section>
 
-<!-- ===== CONTACT ===== -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: teklehaymanot@L3S.de</p>
-  <p>Location: Hannover, Germany</p>
-</section>
+  <!-- Awards -->
+  <section id="awards">
+    <h2>Awards</h2>
 
-<footer>
-  <p>© 2026 Hailay Kidu Teklehaymanot</p>
-</footer>
+    <div class="pub-container">
+      <div class="pub-card"><h3>🏆 SIGIR LiveRAG Winner</h3><p>2026</p></div>
+      <div class="pub-card"><h3>AI Grid Hackathon</h3><p>2025</p></div>
+      <div class="pub-card"><h3>DAAD Scholarship</h3><p>2022</p></div>
+    </div>
+  </section>
+
+  <!-- Service -->
+  <section id="service">
+    <h2>Academic Service</h2>
+    <p>Conference Organizer · Journal Reviewer</p>
+
+    <a href="documents/Certificate_of_Reviewing.pdf" class="button" target="_blank">
+      View Reviewing Certificate
+    </a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: teklehaymanot@L3S.de</p>
+    <p>Hannover, Germany</p>
+  </section>
+
+</div>
 
 </body>
 </html>
