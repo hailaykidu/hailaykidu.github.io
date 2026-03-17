@@ -33,6 +33,12 @@ body {
 
 .sidebar h1 {
   font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.sidebar p {
+  font-size: 14px;
+  margin: 6px 0;
 }
 
 .sidebar a {
@@ -93,6 +99,19 @@ body {
   margin-top: 5px;
 }
 
+/* ===== Responsive ===== */
+@media screen and (max-width: 900px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
 </style>
 
 <script>
@@ -112,12 +131,14 @@ window.onload = function() {
 
 <!-- Sidebar -->
 <div class="sidebar">
-  <img src="images/personal.jpg">
+  <img src="images/personal.jpg" alt="Profile Photo">
   <h1>Hailay Kidu Teklehaymanot</h1>
   <p>PhD Candidate · NLP · RAG</p>
 
   <a href="https://scholar.google.com/citations?user=DMFcxpgAAAAJ" target="_blank">Google Scholar</a>
-  <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+  <a href="https://www.researchgate.net/profile/Hailay-Teklehaymanot" target="_blank">ResearchGate</a>
+  <a href="https://orcid.org/0000-0003-2360-3448" target="_blank">ORCID</a>
+  <a href="https://www.linkedin.com/in/hailay-kidu-teklehaymanot-679872328/" target="_blank">LinkedIn</a>
 
   <a href="https://hailaykidu.github.io/cv.pdf" class="button">Download CV</a>
 </div>
@@ -139,21 +160,35 @@ window.onload = function() {
   <div id="about" class="section">
     <h2>About</h2>
     <p>
-      I am a PhD Candidate at L3S Research Center, Leibniz University Hannover.
-      My research focuses on multilingual NLP, low-resource languages, and retrieval-augmented generation.
+      I am a PhD Candidate at L3S Research Center, Leibniz University Hannover, Germany.
+      My work focuses on multilingual NLP, low-resource languages, and retrieval-augmented generation.
+      I also serve as a Research Associate at the 
+      <a href="https://www.theologie.uzh.ch/de/faecher/altes-testament/at_altorientalisch/team/research_associates/teklehaymanot.html" target="_blank">
+        University of Zurich
+      </a>, supporting computational linguistics and digital humanities research.
     </p>
   </div>
 
   <!-- Research -->
   <div id="research" class="section">
     <h2>Research</h2>
-    <p>This section highlights my research contributions in multilingual NLP and low-resource languages.</p>
+    <p>
+      My research focuses on <b>Linguistically Grounded NLP Methods for Multilingual and Low-Resource Settings</b>.
+      I aim to improve large language models and retrieval-augmented systems by integrating linguistic knowledge,
+      morphology-aware modeling, and multilingual representation techniques.
+    </p>
+
+    <p>
+      Currently, I am a <b>Research Associate at the University of Zurich</b>, contributing to interdisciplinary projects in computational linguistics and digital humanities. 
+      <a href="https://www.theologie.uzh.ch/de/faecher/altes-testament/at_altorientalisch/team/research_associates/teklehaymanot.html" target="_blank">
+        More info
+      </a>
+    </p>
   </div>
 
   <!-- Publications -->
   <div id="publications" class="section">
     <h2>Selected Publications</h2>
-
     <p>
       <strong>Full list:</strong>
       <a href="https://scholar.google.com/citations?user=DMFcxpgAAAAJ&hl=de&oi=ao" target="_blank">
@@ -163,7 +198,7 @@ window.onload = function() {
 
     <div class="card">
       <b>MoVoC: Morphology-Aware Subword Construction for Ge’ez Script Languages</b><br>
-      EMNLP Findings 2025<br>
+      Findings of EMNLP 2025<br>
       <a href="https://hailaykidu.github.io/MoVoC/" class="button" target="_blank">Project</a>
     </div>
 
@@ -181,50 +216,35 @@ window.onload = function() {
     <div class="card"><b>Sarcasm Detection</b><br>Cognitive Computation 2022</div>
     <div class="card"><b>Fake News Detection</b><br>ICAI 2021</div>
     <div class="card"><b>Tigrigna Learning Tool</b><br>IAOE 2015</div>
-
   </div>
 
   <!-- Awards -->
   <div id="awards" class="section">
     <h2>Awards & Recognition</h2>
-
     <div class="card">2026 – SIGIR LiveRAG Challenge Winner</div>
     <div class="card">2025 – AI Grid Hackathon Recognition</div>
-    <div class="card">2022 – DAAD Scholarship</div>
-    <div class="card">2019 – CSC Scholarship</div>
-
-    <p>
-      I am part of the RAGtifier team (3rd place) in 
-      <a href="https://liverag.tii.ae/" target="_blank">LiveRAG Challenge</a>.
-    </p>
+    <div class="card">2022 – DAAD Scholarship (Germany)</div>
+    <div class="card">2019 – China Scholarship Council (CSC) Scholarship</div>
+    <p>I am part of the RAGtifier team (3rd place) in <a href="https://liverag.tii.ae/" target="_blank">LiveRAG Challenge</a>.</p>
   </div>
 
   <!-- Service -->
   <div id="service" class="section">
     <h2>Academic Service</h2>
-
     <p>
       <b>Conference Organizer Committee:</b><br>
       <a href="https://www.mu.edu.et/index.php/ai4sd2026" target="_blank">
         AI for Sustainable Development in Africa (AI4SD 2026)
       </a>
     </p>
-
-    <p><b>Journal Reviewer:</b><br>
-      (To be updated with reviewing venues)
-    </p>
-
-    <a href="documents/Certificate_of_Reviewing.pdf" class="button" target="_blank">
-      View Certificate
-    </a>
+    <p><b>Journal Reviewer:</b><br>(To be updated with reviewing venues)</p>
+    <a href="documents/Certificate_of_Reviewing.pdf" class="button" target="_blank">View Certificate</a>
   </div>
 
   <!-- Contact -->
   <div id="contact" class="section">
     <h2>Contact</h2>
-
-    <p>Email: teklehaymanot@L3S.de</p>
-
+    <p>Email: <a href="mailto:teklehaymanot@L3S.de">teklehaymanot@L3S.de</a></p>
     <p>
       L3S Research Center<br>
       Appelstr. 4a<br>
