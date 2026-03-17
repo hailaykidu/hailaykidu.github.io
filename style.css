@@ -39,6 +39,7 @@ body {
   margin: 8px 0;
 }
 
+/* ===== Sidebar Links ===== */
 .sidebar a {
   display: block;
   color: #1a73e8;
@@ -51,25 +52,28 @@ body {
   text-decoration: underline;
 }
 
-/* ===== FIXED CV BUTTON ===== */
-.sidebar a.button {
+/* ===== 🔥 CV BUTTON (STRONG FIX) ===== */
+.sidebar a.button,
+.sidebar a.button:link,
+.sidebar a.button:visited {
   display: block;
+  width: 100%;
   text-align: center;
-  background-color: #1a73e8;
-  color: #ffffff !important;   /* FIX: force visible white text */
+  background-color: #1a73e8 !important;
+  color: #ffffff !important;   /* FORCE visible text */
   font-weight: bold;
-  font-size: 15px;
+  font-size: 16px;
   padding: 12px 0;
   border-radius: 6px;
   margin-top: 15px;
-  text-decoration: none;
-  border: 1px solid #1a73e8;
+  text-decoration: none !important;
+  border: 2px solid #1a73e8;
+  box-sizing: border-box;
 }
 
 .sidebar a.button:hover {
-  background-color: #0f5fcc;
+  background-color: #0f5fcc !important;
   color: #ffffff !important;
-  text-decoration: none;
 }
 
 /* ===== Content ===== */
@@ -118,16 +122,16 @@ body {
   border: 1px solid #eee;
 }
 
-/* Button inside content */
+/* ===== Buttons inside cards ===== */
 .card a.button {
   display: inline-block;
   text-align: center;
   background: #1a73e8;
   color: #ffffff;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 4px;
-  margin-top: 5px;
+  margin-top: 8px;
   text-decoration: none;
 }
 
@@ -162,10 +166,12 @@ footer {
     width: 100%;
     height: auto;
   }
+
   .content {
     margin-left: 0;
     padding: 20px;
   }
+
   .menu {
     flex-wrap: wrap;
     gap: 15px;
