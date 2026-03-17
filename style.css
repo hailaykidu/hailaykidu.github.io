@@ -1,4 +1,4 @@
- /* ===== General ===== */
+/* ===== General ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -25,7 +25,7 @@ body {
   margin-bottom: 15px;
   display: block;
   margin-left: auto;
-  margin-right: auto; /* keep image centered */
+  margin-right: auto;
 }
 
 .sidebar h1 {
@@ -39,6 +39,7 @@ body {
   margin: 8px 0;
 }
 
+/* Sidebar links */
 .sidebar a {
   display: block;
   color: #1a73e8;
@@ -51,21 +52,27 @@ body {
   text-decoration: underline;
 }
 
-/* CV Button */
+/* ===== FIXED CV BUTTON ===== */
 .sidebar a.button {
   display: block;
+  width: 100%;
   text-align: center;
-  background: #1a73e8;
-  color: white;
+  background-color: #1a73e8;
+  color: #ffffff !important;   /* force visibility */
   font-weight: bold;
-  padding: 10px 0;
+  font-size: 15px;
+  padding: 12px 0;
   border-radius: 6px;
-  margin-top: 15px;
+  margin-top: 18px;
   text-decoration: none;
+  border: 1px solid #1a73e8;
+  box-sizing: border-box;
 }
 
 .sidebar a.button:hover {
-  background: #0f5fcc;
+  background-color: #0f5fcc;
+  color: #ffffff !important;
+  text-decoration: none;
 }
 
 /* ===== Content ===== */
@@ -119,11 +126,11 @@ body {
   display: inline-block;
   text-align: center;
   background: #1a73e8;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 4px;
-  margin-top: 5px;
+  margin-top: 8px;
   text-decoration: none;
 }
 
