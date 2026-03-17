@@ -87,7 +87,7 @@ footer {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* ===== CV Button ===== */
+/* ===== Button ===== */
 .cv-button {
   display: inline-block;
   margin-top: 15px;
@@ -122,6 +122,7 @@ window.onload = function() {
 <nav>
   <a href="#" onclick="showSection('about')">About</a>
   <a href="#" onclick="showSection('research')">Research</a>
+  <a href="#" onclick="showSection('publications')">Publications</a>
   <a href="#" onclick="showSection('experience')">Experience</a>
   <a href="#" onclick="showSection('service')">Academic Service</a>
   <a href="#" onclick="showSection('contact')">Contact</a>
@@ -146,45 +147,9 @@ window.onload = function() {
 <!-- ===== ABOUT ===== -->
 <section id="about">
   <h2>About</h2>
-
   <p>
-    I am a PhD Candidate at the 
-    <a href="https://www.l3s.de/" target="_blank" style="color:#1a73e8; font-weight:600;">
-      L3S Research Center, Leibniz University Hannover
-    </a>, Germany. My research focuses on multilingual Natural Language Processing, 
-    Information Retrieval, and morphology-aware modeling for low-resource and underrepresented languages.
-  </p>
-
-  <p>
-    My work aims to advance linguistically informed large language models and retrieval-augmented systems 
-    that improve knowledge access, cross-lingual understanding, and digital inclusion across diverse global communities.
-  </p>
-
-  <p>
-    I previously conducted doctoral research at the 
-    <a href="https://www.bjut.edu.cn/" target="_blank" style="color:#1a73e8; font-weight:600;">
-      Beijing University of Technology
-    </a>, working on computational approaches to fake news detection and sarcasm detection. 
-    I also served as an Assistant Professor at 
-    <a href="https://www.mu.edu.et/" target="_blank" style="color:#1a73e8; font-weight:600;">
-      Mekelle University
-    </a> and as a Lecturer at the 
-    <a href="https://uog.edu.et/" target="_blank" style="color:#1a73e8; font-weight:600;">
-      University of Gondar
-    </a>, Ethiopia.
-  </p>
-
-  <p>
-    I currently contribute as a Research Associate at the 
-    <a href="https://www.theologie.uzh.ch/de/faecher/altes-testament/at_altorientalisch/team/research_associates/teklehaymanot.html" 
-       target="_blank" style="color:#1a73e8; font-weight:600;">
-      University of Zurich
-    </a>, supporting interdisciplinary research in computational linguistics and digital humanities.
-  </p>
-
-  <p>
-    Beyond research, I am passionate about teaching and mentoring students in NLP, IR, and AI. 
-    Outside academia, I enjoy cycling and swimming.
+    I am a PhD Candidate at the L3S Research Center, Leibniz University Hannover, Germany.
+    My research focuses on multilingual NLP, Information Retrieval, and morphology-aware modeling.
   </p>
 </section>
 
@@ -200,65 +165,57 @@ window.onload = function() {
   </ul>
 </section>
 
-<!-- ===== EXPERIENCE ===== -->
-<section id="experience">
-  <h2>Academic & Professional Experience</h2>
+<!-- ===== PUBLICATIONS ===== -->
+<section id="publications">
+  <h2>Publications & Projects</h2>
 
-  <h3>PhD Candidate — Leibniz University Hannover</h3>
-  <p>Research in multilingual NLP, morphology-aware modeling, and retrieval-augmented systems.</p>
+  <h3>MoVoC: Morpheme-Aware Tokenization</h3>
+  <p>
+    A tokenizer designed for Geez script languages to overcome limitations of standard BPE.
+  </p>
+  <a class="cv-button" href="https://hailaykidu.github.io/MoVoC/" target="_blank">
+    View Project
+  </a>
 
-  <h3>Assistant Professor — Mekelle University</h3>
-  <p>Teaching and research in NLP, machine learning, and data science.</p>
+  <h3>LGSE Project</h3>
+  <p>
+    Low-resource multilingual system for scalable language engineering.
+  </p>
+  <a class="cv-button" href="https://hailaykidu.github.io/LGSE-Project-/" target="_blank">
+    View Project
+  </a>
 
-  <h3>Lecturer — University of Gondar</h3>
-  <p>Courses in programming, algorithms, and applied data analytics.</p>
-
-  <h3>Data Analyst — Cybersoft Company</h3>
-  <p>Data-driven solutions for business intelligence and analytics.</p>
 </section>
 
-<!-- ===== ACADEMIC SERVICE ===== -->
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience">
+  <h2>Experience</h2>
+  <p><strong>PhD Candidate</strong> — Leibniz University Hannover</p>
+  <p><strong>Assistant Professor</strong> — Mekelle University</p>
+  <p><strong>Lecturer</strong> — University of Gondar</p>
+</section>
+
+<!-- ===== SERVICE ===== -->
 <section id="service">
-  <h2>Academic Service & Leadership</h2>
+  <h2>Academic Service</h2>
 
-  <h3>Organizing Committee Member</h3>
-  <p>
-    Member of the Organizing Committee for the 
-    <strong>
-      <a href="https://www.mu.edu.et/index.php/ai4sd2026" target="_blank" style="color:#1a73e8;">
-        International Conference on AI for Sustainable Development in Africa (AI4SD 2026)
-      </a>
-    </strong>.
-  </p>
-
-  <ul>
-    <li><a href="https://www.mu.edu.et/index.php/component/content/article/call-for-papers-ai-for-sustainable-development-in-africa-ai4sd-2026" target="_blank" style="color:#1a73e8;">Call for Papers</a></li>
-    <li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7425936011274207232" target="_blank" style="color:#1a73e8;">LinkedIn Announcement</a></li>
-  </ul>
-
-  <div class="poster">
-    <p><strong>Conference Poster:</strong></p>
-    <img src="images/ai4sd_poster.jpg" alt="AI4SD Conference Poster">
-  </div>
+  <h3>Conference Organizer</h3>
+  <p>AI4SD 2026 Conference</p>
 
   <h3>Journal Reviewer</h3>
-  <ul>
-    <li><a href="https://www.lidsen.com/journals/dsa" target="_blank" style="color:#1a73e8;">International Journal of Data Science and Analysis</a></li>
-    <li><a href="https://online-journals.org/index.php/i-jim" target="_blank" style="color:#1a73e8;">International Journal of Interactive Mobile Technologies (iJIM)</a></li>
-  </ul>
+  <p>International Journals in Data Science & Mobile Technologies</p>
+
+  <h3>Certificate of Reviewing</h3>
+  <a class="cv-button" href="documents/Certificate_of_Reviewing.pdf" target="_blank">
+    View Certificate
+  </a>
 </section>
 
 <!-- ===== CONTACT ===== -->
 <section id="contact">
   <h2>Contact</h2>
-  <p>Email: <a href="mailto:teklehaymanot@L3S.de" style="color:#1a73e8;">teklehaymanot@L3S.de</a></p>
+  <p>Email: teklehaymanot@L3S.de</p>
   <p>Location: Hannover, Germany</p>
-
-  <p><strong>Office Address:</strong><br>
-     L3S Research Center<br>
-     Appelstr. 4a · 30167 Hannover<br>
-     2nd Floor
-  </p>
 </section>
 
 <footer>
