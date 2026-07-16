@@ -286,6 +286,15 @@
     line-height: 1.55;
   }
 
+  .project-card h4 {
+    font-size: 0.93rem;
+    font-weight: 600;
+    letter-spacing: normal;
+    text-transform: none;
+    color: var(--navy);
+    margin-bottom: 7px;
+  }
+
   /* ── Timeline (Education & Experience) ── */
   .timeline { position: relative; padding-left: 22px; }
   .timeline::before {
@@ -555,6 +564,7 @@
       padding: 20px 24px;
       gap: 16px;
     }
+    .sidebar > * { width: 100%; }
     .sidebar-photo, .avatar-placeholder { margin: 0; }
     .sidebar-name { text-align: left; }
     .sidebar-role { text-align: left; }
@@ -743,7 +753,7 @@
 
         <div class="skills-grid" style="grid-template-columns:1fr 1fr;">
 
-          <div class="skill-card">
+          <div class="skill-card project-card">
             <h4>EXLMR</h4>
             <p>Vocabulary-extended XLM-R for Tigrinya text classification, plus FT-EXLMR, a further fine-tuned variant for low-resource African languages.</p>
             <div class="pub-links" style="margin-top:10px;">
@@ -753,7 +763,7 @@
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card project-card">
             <h4>MachineT_TigEng</h4>
             <p>Low-resource English–Tigrinya machine translation: MarianMT fine-tuned with a custom Ge'ez-script tokenizer (FLLM 2025).</p>
             <div class="pub-links" style="margin-top:10px;">
@@ -762,7 +772,7 @@
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card project-card">
             <h4>MoVoC</h4>
             <p>Morphology-aware subword construction for Ge'ez-script languages (EMNLP 2025 Findings).</p>
             <div class="pub-links" style="margin-top:10px;">
@@ -771,7 +781,7 @@
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card project-card">
             <h4>LGSE</h4>
             <p>Lexically grounded subword embedding initialization for low-resource language adaptation (LREC 2026).</p>
             <div class="pub-links" style="margin-top:10px;">
@@ -780,7 +790,7 @@
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card project-card">
             <h4>VEXMLM</h4>
             <p>Vocabulary-extended XLM-R for Ge'ez-script African languages, with continued MLM pretraining and multi-task fine-tuning across 19 low-resource languages.</p>
             <div class="pub-links" style="margin-top:10px;">
@@ -788,7 +798,7 @@
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card project-card">
             <h4>TigQA</h4>
             <p>Expert-annotated question-answering dataset in Tigrinya (LREC-COLING 2024).</p>
             <div class="pub-links" style="margin-top:10px;">
@@ -796,7 +806,7 @@
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card project-card">
             <h4>RAGtifier (LiveRAG Challenge)</h4>
             <p>End-to-end RAG pipeline for the SIGIR 2025 LiveRAG Challenge — 3rd place, $2,000 prize.</p>
             <div class="pub-links" style="margin-top:10px;">
@@ -805,7 +815,7 @@
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card project-card">
             <h4>LLM Tokenization Evaluation</h4>
             <p>Evaluation code studying tokenization disparities as infrastructure bias across subword systems.</p>
             <div class="pub-links" style="margin-top:10px;">
@@ -813,7 +823,7 @@
             </div>
           </div>
 
-          <div class="skill-card">
+          <div class="skill-card project-card">
             <h4>Fake News Detection</h4>
             <p>Transformer-based fake news detection using user response signals on social media (ICAI 2021).</p>
             <div class="pub-links" style="margin-top:10px;">
