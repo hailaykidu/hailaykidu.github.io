@@ -635,6 +635,7 @@
     <nav class="topnav" role="navigation">
       <button class="topnav-btn active" onclick="showSection('about')">About</button>
       <button class="topnav-btn" onclick="showSection('research')">Research</button>
+      <button class="topnav-btn" onclick="showSection('projects')">Projects &amp; Code</button>
       <button class="topnav-btn" onclick="showSection('publications')">Publications</button>
       <button class="topnav-btn" onclick="showSection('experience')">Experience</button>
       <button class="topnav-btn" onclick="showSection('awards')">Awards</button>
@@ -725,6 +726,101 @@
             <p class="tl-title">Computational Resources for Classical Ge'ez</p>
             <p class="tl-desc">Building NLP datasets, morphological synthesizers, and machine translation benchmarks for Tigrinya and Amharic; affiliated with the University of Zurich for digital humanities applications.</p>
           </div>
+        </div>
+      </section>
+
+      <!-- ===== PROJECTS & CODE ===== -->
+      <section id="projects" class="section">
+        <h2 class="section-title">Projects &amp; Code</h2>
+        <div class="section-underline"></div>
+
+        <p style="font-size:0.86rem;color:var(--muted);margin-bottom:16px;">
+          Selected research code and models, each linked to its source
+          repository and released model where available. Full accounts on
+          <a href="https://github.com/hailaykidu" target="_blank">GitHub</a> ·
+          <a href="https://huggingface.co/Hailay" target="_blank">Hugging Face</a>
+        </p>
+
+        <div class="skills-grid" style="grid-template-columns:1fr 1fr;">
+
+          <div class="skill-card">
+            <h4>EXLMR</h4>
+            <p>Vocabulary-extended XLM-R for Tigrinya text classification, plus FT-EXLMR, a further fine-tuned variant for low-resource African languages.</p>
+            <div class="pub-links" style="margin-top:10px;">
+              <a class="pub-link primary" href="https://github.com/hailaykidu/EXLMR" target="_blank">GitHub</a>
+              <a class="pub-link" href="https://huggingface.co/Hailay/EXLMR" target="_blank">HF Model</a>
+              <a class="pub-link" href="https://huggingface.co/Hailay/FT_EXLMR" target="_blank">HF: FT-EXLMR</a>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h4>MachineT_TigEng</h4>
+            <p>Low-resource English–Tigrinya machine translation: MarianMT fine-tuned with a custom Ge'ez-script tokenizer (FLLM 2025).</p>
+            <div class="pub-links" style="margin-top:10px;">
+              <a class="pub-link primary" href="https://github.com/hailaykidu/MachineT_TigEng" target="_blank">GitHub</a>
+              <a class="pub-link" href="https://huggingface.co/Hailay/MachineT_TigEng" target="_blank">HF Model</a>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h4>MoVoC</h4>
+            <p>Morphology-aware subword construction for Ge'ez-script languages (EMNLP 2025 Findings).</p>
+            <div class="pub-links" style="margin-top:10px;">
+              <a class="pub-link primary" href="https://github.com/hailaykidu/MoVoC" target="_blank">GitHub</a>
+              <a class="pub-link" href="https://hailaykidu.github.io/MoVoC/" target="_blank">Project Page</a>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h4>LGSE</h4>
+            <p>Lexically grounded subword embedding initialization for low-resource language adaptation (LREC 2026).</p>
+            <div class="pub-links" style="margin-top:10px;">
+              <a class="pub-link primary" href="https://github.com/hailaykidu/LGSE-Project-" target="_blank">GitHub</a>
+              <a class="pub-link" href="https://hailaykidu.github.io/LGSE-Project-/" target="_blank">Project Page</a>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h4>VEXMLM</h4>
+            <p>Vocabulary-extended XLM-R for Ge'ez-script African languages, with continued MLM pretraining and multi-task fine-tuning across 19 low-resource languages.</p>
+            <div class="pub-links" style="margin-top:10px;">
+              <a class="pub-link primary" href="https://github.com/hailaykidu/VEXMLM" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h4>TigQA</h4>
+            <p>Expert-annotated question-answering dataset in Tigrinya (LREC-COLING 2024).</p>
+            <div class="pub-links" style="margin-top:10px;">
+              <a class="pub-link primary" href="https://github.com/hailaykidu/TigQA-Dataset" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h4>RAGtifier (LiveRAG Challenge)</h4>
+            <p>End-to-end RAG pipeline for the SIGIR 2025 LiveRAG Challenge — 3rd place, $2,000 prize.</p>
+            <div class="pub-links" style="margin-top:10px;">
+              <a class="pub-link primary" href="https://github.com/hailaykidu/LiveRAG-Challenge" target="_blank">GitHub</a>
+              <a class="pub-link" href="https://liverag.tii.ae/" target="_blank">Challenge</a>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h4>LLM Tokenization Evaluation</h4>
+            <p>Evaluation code studying tokenization disparities as infrastructure bias across subword systems.</p>
+            <div class="pub-links" style="margin-top:10px;">
+              <a class="pub-link primary" href="https://github.com/hailaykidu/LLM-Tokenization-Evaluation" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h4>Fake News Detection</h4>
+            <p>Transformer-based fake news detection using user response signals on social media (ICAI 2021).</p>
+            <div class="pub-links" style="margin-top:10px;">
+              <a class="pub-link primary" href="https://github.com/hailaykidu/Fake-News-Detection" target="_blank">GitHub</a>
+            </div>
+          </div>
+
         </div>
       </section>
 
