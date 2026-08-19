@@ -575,6 +575,69 @@
     .contact-grid { grid-template-columns: 1fr; }
     .topnav { padding: 0 20px; overflow-x: auto; }
   }
+
+  /* ── Research areas & pipeline ── */
+  .research-lede { font-size: 1.02rem; color: var(--slate); max-width: 68ch; margin-bottom: 1.6rem; }
+
+  .pipeline {
+    display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .5rem;
+    padding: .9rem 1rem; margin: 0 0 2rem;
+    background: var(--bg-soft); border: 1px solid var(--rule); border-radius: 6px;
+  }
+  .pipe-step {
+    font-size: .78rem; font-weight: 500; color: var(--navy);
+    background: #fff; border: 1px solid var(--rule);
+    padding: .25rem .6rem; border-radius: 4px; white-space: nowrap;
+  }
+  .pipe-arrow { color: var(--muted); font-size: .8rem; }
+
+  .area-grid {
+    display: grid; gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .area-card {
+    border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+    border-radius: 5px; padding: 1.05rem 1.15rem; background: #fff;
+  }
+  .area-card h3 {
+    font-size: .95rem; font-weight: 600; color: var(--navy);
+    margin-bottom: .45rem; letter-spacing: 0;
+  }
+  .area-card p { font-size: .88rem; color: var(--slate); line-height: 1.6; }
+  .area-meta {
+    margin-top: .6rem; font-size: .78rem; color: var(--muted);
+    border-top: 1px solid var(--rule); padding-top: .5rem;
+  }
+
+  /* ── Resources ── */
+  .res-group {
+    font-size: .95rem; font-weight: 600; color: var(--navy);
+    margin: 1.8rem 0 .3rem; padding-bottom: .3rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .res-note { font-size: .84rem; color: var(--muted); margin-bottom: .7rem; max-width: 70ch; }
+  .res-list { list-style: none; margin: 0 0 .4rem; padding: 0; }
+  .res-list li {
+    padding: .45rem 0; border-bottom: 1px solid var(--bg-soft);
+    font-size: .88rem; line-height: 1.55;
+  }
+  .res-list li:last-child { border-bottom: none; }
+  .res-list a { color: var(--accent); text-decoration: none; font-weight: 500; }
+  .res-list a:hover { text-decoration: underline; }
+  .res-plain { font-weight: 500; color: var(--navy); }
+  .res-tag {
+    display: inline-block; font-size: .68rem; font-weight: 500;
+    background: var(--accent-lt); color: var(--navy);
+    padding: .08rem .4rem; border-radius: 3px; margin-left: .4rem;
+    vertical-align: middle;
+  }
+  .res-desc { display: block; color: var(--slate); font-size: .84rem; margin-top: .15rem; }
+
+  @media (max-width: 640px) {
+    .area-grid { grid-template-columns: 1fr; }
+    .pipeline { gap: .3rem .35rem; padding: .7rem; }
+    .pipe-step { font-size: .72rem; padding: .2rem .45rem; }
+  }
 </style>
 </head>
 <body>
@@ -587,7 +650,8 @@
 
     <p class="sidebar-name">Hailay Kidu Teklehaymanot</p>
     <p class="sidebar-role">
-      PhD Candidate · NLP &amp; RAG Researcher<br>
+      PhD Candidate · NLP Researcher<br>
+      Multilingual &amp; Low-Resource Language Models<br>
       DAAD Hilde Domin Scholar (Scholar at Risk)
     </p>
 
@@ -646,6 +710,7 @@
       <button class="topnav-btn active" onclick="showSection('about')">About</button>
       <button class="topnav-btn" onclick="showSection('research')">Research</button>
       <button class="topnav-btn" onclick="showSection('projects')">Projects &amp; Code</button>
+      <button class="topnav-btn" onclick="showSection('resources')">Resources</button>
       <button class="topnav-btn" onclick="showSection('publications')">Publications</button>
       <button class="topnav-btn" onclick="showSection('experience')">Experience</button>
       <button class="topnav-btn" onclick="showSection('awards')">Awards</button>
@@ -661,11 +726,11 @@
         <div class="section-underline"></div>
 
         <p class="about-intro">
-          I am a <strong>PhD Candidate</strong> at the <a href="https://www.l3s.de/" target="_blank">L3S Research Center, Leibniz Universität Hannover</a>, Germany, where I work under the supervision of Prof. Dr. Wolfgang Nejdl. My research lies at the intersection of <strong>multilingual NLP, retrieval-augmented generation (RAG), and low-resource language modeling</strong>, with a particular focus on morphologically complex Ge'ez-script languages — Tigrinya, Amharic, and Classical Ge'ez.
+          I am a <strong>PhD Candidate</strong> at the <a href="https://www.l3s.de/" target="_blank">L3S Research Center, Leibniz Universität Hannover</a>, Germany, where I work under the supervision of Prof. Dr. Wolfgang Nejdl. My research lies at the intersection of <strong>multilingual NLP, language-model adaptation, and NLP evaluation for low-resource languages</strong>, with a particular focus on morphologically complex Ge'ez-script languages — Tigrinya, Amharic, and Classical Ge'ez.
         </p>
 
         <p class="about-intro">
-          I also serve as a <strong>Research Associate at the <a href="https://www.theologie.uzh.ch/de/faecher/altes-testament/team-altorientalisch/assoziierte-forschende/teklehaymanot.html" target="_blank">University of Zurich</a></strong>, collaborating with Prof. Dr. Nesina Grütter on computational linguistics and digital humanities. I hold the <strong>DAAD Hilde Domin Scholarship</strong> as a Scholar at Risk, and bring over 12 years of experience in research, university teaching, and academic leadership across Ethiopia, China, and Germany.
+          I am also an <strong>Associated Researcher at the <a href="https://www.theologie.uzh.ch/de/faecher/altes-testament/team-altorientalisch/assoziierte-forschende/teklehaymanot.html" target="_blank">University of Zurich</a></strong>, collaborating with Prof. Dr. Nesina Grütter on computational linguistics and digital humanities. I hold the <strong>DAAD Hilde Domin Scholarship</strong> as a Scholar at Risk, and bring over 12 years of experience in research, university teaching, and academic leadership across Ethiopia, China, and Germany.
         </p>
 
         <p class="about-intro">
@@ -676,8 +741,8 @@
           <span class="badge badge-blue">Multilingual NLP</span>
           <span class="badge badge-blue">Retrieval-Augmented Generation</span>
           <span class="badge badge-blue">Low-Resource Languages</span>
-          <span class="badge badge-blue">Morphology-Aware Modeling</span>
-          <span class="badge badge-blue">LLM Evaluation &amp; Fine-Tuning</span>
+          <span class="badge badge-blue">Language Model Adaptation</span>
+          <span class="badge badge-blue">NLP &amp; LLM Evaluation</span>
           <span class="badge badge-gold">DAAD Scholar at Risk</span>
           <span class="badge badge-green">SIGIR LiveRAG 2025 — 3rd Place</span>
         </div>
@@ -713,29 +778,90 @@
 
       <!-- ===== RESEARCH ===== -->
       <section id="research" class="section">
-        <h2 class="section-title">Research</h2>
-        <div class="section-underline"></div>
+        <h2>Research</h2>
 
-        <p style="font-size:0.95rem;color:var(--ink);line-height:1.8;margin-bottom:22px;">
-          My overarching research theme is <strong>Linguistically Grounded NLP for Multilingual and Low-Resource Settings</strong>. I develop methods that integrate morphological and lexical knowledge into large language models and retrieval systems, targeting languages that are structurally complex yet severely underrepresented in NLP benchmarks and infrastructure.
+        <p class="research-lede">
+          I develop and evaluate language models for multilingual and low-resource
+          settings, working across the model lifecycle: data and representations,
+          pretraining and model adaptation, post-training for downstream tasks, and
+          rigorous evaluation. My work centres on Ge'ez-script languages &mdash;
+          principally Tigrinya and Amharic &mdash; which are morphologically rich but
+          underrepresented in NLP benchmarks and infrastructure.
         </p>
 
-        <div class="timeline">
-          <div class="timeline-item">
-            <p class="tl-date">Current Focus</p>
-            <p class="tl-title">Morphology-Aware Tokenization &amp; Vocabulary Expansion</p>
-            <p class="tl-desc">Developing subword construction methods (MoVoC) and lexically grounded embedding initialization (LGSE) to reduce tokenization disparities and improve LLM access for Ge'ez-script languages.</p>
-          </div>
-          <div class="timeline-item">
-            <p class="tl-date">Active</p>
-            <p class="tl-title">Retrieval-Augmented Generation Systems</p>
-            <p class="tl-desc">Building and evaluating RAG pipelines with hybrid retrieval, query-to-embedding matching, and large-scale document corpora. Led the RAGtifier system at SIGIR LiveRAG 2025 (3rd place, $2,000 prize).</p>
-          </div>
-          <div class="timeline-item">
-            <p class="tl-date">Active</p>
-            <p class="tl-title">Computational Resources for Classical Ge'ez</p>
-            <p class="tl-desc">Building NLP datasets, morphological synthesizers, and machine translation benchmarks for Tigrinya and Amharic; affiliated with the University of Zurich for digital humanities applications.</p>
-          </div>
+        <div class="pipeline" role="img" aria-label="Research pipeline: data and resources, representation, pretraining, adaptation, post-training, evaluation, applications">
+          <span class="pipe-step">Data &amp; Resources</span>
+          <span class="pipe-arrow" aria-hidden="true">&rarr;</span>
+          <span class="pipe-step">Representation</span>
+          <span class="pipe-arrow" aria-hidden="true">&rarr;</span>
+          <span class="pipe-step">Pretraining</span>
+          <span class="pipe-arrow" aria-hidden="true">&rarr;</span>
+          <span class="pipe-step">Adaptation</span>
+          <span class="pipe-arrow" aria-hidden="true">&rarr;</span>
+          <span class="pipe-step">Post-Training</span>
+          <span class="pipe-arrow" aria-hidden="true">&rarr;</span>
+          <span class="pipe-step">Evaluation</span>
+          <span class="pipe-arrow" aria-hidden="true">&rarr;</span>
+          <span class="pipe-step">Applications</span>
+        </div>
+
+        <div class="area-grid">
+
+          <article class="area-card">
+            <h3>Pretraining &amp; Language Model Adaptation</h3>
+            <p>Adapting pretrained multilingual models to new languages through continued
+               masked-language-model pretraining, vocabulary expansion, and embedding
+               initialization.</p>
+            <p class="area-meta">VEXMLM &middot; LGSE &middot; EXLMR</p>
+          </article>
+
+          <article class="area-card">
+            <h3>Post-Training &amp; Task Adaptation</h3>
+            <p>Supervised fine-tuning of adapted models for named entity recognition,
+               extractive question answering, sentiment analysis, and classification.
+               Distinct from continued pretraining in both objective and data.</p>
+            <p class="area-meta">VEXMLM downstream models &middot; EXLMR</p>
+          </article>
+
+          <article class="area-card">
+            <h3>NLP &amp; LLM Evaluation</h3>
+            <p>Intrinsic and downstream evaluation under controlled conditions:
+               multi-seed experiments, fixed configurations, reproducible pipelines, and
+               benchmark construction for languages with little evaluation infrastructure.</p>
+            <p class="area-meta">VEXMLM &middot; LLM Probe &middot; Tokenization Disparities</p>
+          </article>
+
+          <article class="area-card">
+            <h3>Multilingual &amp; Low-Resource NLP</h3>
+            <p>Methods and resources for African and Ge'ez-script languages, including
+               cross-lingual transfer and language-specific adaptation for Tigrinya
+               and Amharic.</p>
+            <p class="area-meta">TIGQA &middot; MoVoC &middot; Ge'ez morphological synthesizer</p>
+          </article>
+
+          <article class="area-card">
+            <h3>Representation Learning &amp; Tokenization</h3>
+            <p>Subword construction, vocabulary design, and embedding initialization,
+               including morphology-aware tokenization for scripts poorly served by
+               general-purpose segmenters.</p>
+            <p class="area-meta">MoVoC &middot; LGSE &middot; Ge'ez tokenizers</p>
+          </article>
+
+          <article class="area-card">
+            <h3>Machine Translation</h3>
+            <p>Low-resource translation between English and Tigrinya or Amharic using
+               multilingual pretrained models, custom tokenizers, and clean evaluation
+               benchmarks.</p>
+            <p class="area-meta">EnTiMT &middot; MoVoC-MT &middot; MachineT_TigEng</p>
+          </article>
+
+          <article class="area-card">
+            <h3>LLM Systems &amp; Retrieval-Augmented Generation</h3>
+            <p>Retrieval-augmented generation pipelines with hybrid retrieval and
+               query-to-embedding matching, and evaluation of RAG generation strategies.</p>
+            <p class="area-meta">RAGtifier (SIGIR LiveRAG 2025)</p>
+          </article>
+
         </div>
       </section>
 
@@ -860,6 +986,121 @@
           </div>
 
         </div>
+      </section>
+
+      <!-- ===== RESOURCES ===== -->
+      <section id="resources" class="section">
+        <h2>Resources</h2>
+        <p class="research-lede">
+          Public research artifacts &mdash; models, datasets, tokenizers, and interactive
+          demonstrations. The full collection is on
+          <a href="https://huggingface.co/Hailay" target="_blank" rel="noopener">Hugging Face</a>.
+        </p>
+
+        <h3 class="res-group">Language Models</h3>
+        <p class="res-note">Vocabulary-extended and language-adapted models for Ge'ez-script languages.</p>
+        <ul class="res-list">
+          <li><a href="https://huggingface.co/Hailay/VEXMLM" target="_blank" rel="noopener">VEXMLM</a>
+              <span class="res-tag">fill-mask</span>
+              <span class="res-desc">Vocabulary-extended XLM-R (280,002 subwords) with continued MLM pretraining for Amharic and Tigrinya.</span></li>
+          <li><a href="https://huggingface.co/Hailay/xlmr-amharic-mlm" target="_blank" rel="noopener">xlmr-amharic-mlm</a>
+              <span class="res-tag">fill-mask</span>
+              <span class="res-desc">XLM-R adapted to Amharic through continued pretraining.</span></li>
+          <li><a href="https://huggingface.co/Hailay/xlmr-tigrinya-mlm" target="_blank" rel="noopener">xlmr-tigrinya-mlm</a>
+              <span class="res-tag">fill-mask</span>
+              <span class="res-desc">XLM-R adapted to Tigrinya through continued pretraining.</span></li>
+          <li><a href="https://huggingface.co/Hailay/TigRoberta" target="_blank" rel="noopener">TigRoberta</a>
+              <span class="res-desc">RoBERTa-style language model for Tigrinya.</span></li>
+          <li><a href="https://huggingface.co/Hailay/EXLMR" target="_blank" rel="noopener">EXLMR</a>
+              <span class="res-tag">text-classification</span>
+              <span class="res-desc">Extended XLM-R for Ethiopian languages, with a fine-tuned variant
+              (<a href="https://huggingface.co/Hailay/FT_EXLMR" target="_blank" rel="noopener">FT_EXLMR</a>).</span></li>
+        </ul>
+
+        <h3 class="res-group">Task-Specific Models</h3>
+        <p class="res-note">Post-trained VEXMLM checkpoints, released with five seeds each.</p>
+        <ul class="res-list">
+          <li><a href="https://huggingface.co/Hailay/VEXMLM-Tigrinya-NER" target="_blank" rel="noopener">VEXMLM-Tigrinya-NER</a>
+              <span class="res-tag">token-classification</span></li>
+          <li><a href="https://huggingface.co/Hailay/VEXMLM-Amharic-NER" target="_blank" rel="noopener">VEXMLM-Amharic-NER</a>
+              <span class="res-tag">token-classification</span></li>
+          <li><a href="https://huggingface.co/Hailay/VEXMLM-AmQA" target="_blank" rel="noopener">VEXMLM-AmQA</a>
+              <span class="res-tag">question-answering</span></li>
+          <li><a href="https://huggingface.co/Hailay/VEXMLM-TIGQA" target="_blank" rel="noopener">VEXMLM-TIGQA</a>
+              <span class="res-tag">question-answering</span></li>
+          <li><a href="https://huggingface.co/Hailay/VEXMLM-TiQuAD" target="_blank" rel="noopener">VEXMLM-TiQuAD</a>
+              <span class="res-tag">question-answering</span></li>
+          <li><a href="https://huggingface.co/Hailay/VEXMLM-AfriSenti-Amharic" target="_blank" rel="noopener">VEXMLM-AfriSenti-Amharic</a>
+              <span class="res-tag">text-classification</span></li>
+          <li><a href="https://huggingface.co/Hailay/glot500-multilingual-sentiment" target="_blank" rel="noopener">glot500-multilingual-sentiment</a>
+              <span class="res-tag">text-classification</span></li>
+        </ul>
+
+        <h3 class="res-group">Translation Models</h3>
+        <ul class="res-list">
+          <li><a href="https://huggingface.co/Hailay/entimt-en-tigrinya-mt" target="_blank" rel="noopener">entimt-en-tigrinya-mt</a>
+              <span class="res-tag">translation</span>
+              <span class="res-desc">English&ndash;Tigrinya translation model.</span></li>
+          <li><a href="https://huggingface.co/Hailay/movoc-mt-en-am-ti" target="_blank" rel="noopener">movoc-mt-en-am-ti</a>
+              <span class="res-tag">translation</span>
+              <span class="res-desc">Translation model using MoVoC morphology-aware vocabulary.</span></li>
+          <li><a href="https://huggingface.co/Hailay/MachineT_TigEng" target="_blank" rel="noopener">MachineT_TigEng</a>
+              <span class="res-desc">Tigrinya&ndash;English translation model.</span></li>
+          <li><a href="https://huggingface.co/Hailay/llama2-amharic-english-mt" target="_blank" rel="noopener">llama2-amharic-english-mt</a>
+              <span class="res-tag">translation</span>
+              <span class="res-desc">Amharic&ndash;English translation built on Llama&nbsp;2.</span></li>
+        </ul>
+
+        <h3 class="res-group">Tokenizers &amp; Embeddings</h3>
+        <ul class="res-list">
+          <li><a href="https://huggingface.co/Hailay/GeezScriptTokenizer" target="_blank" rel="noopener">GeezScriptTokenizer</a>
+              <span class="res-desc">Tokenizer for Ge'ez-script text.</span></li>
+          <li><a href="https://huggingface.co/Hailay/geez-tokenizer" target="_blank" rel="noopener">geez-tokenizer</a></li>
+          <li><a href="https://huggingface.co/Hailay/geez-en-shared-tokenizer" target="_blank" rel="noopener">geez-en-shared-tokenizer</a>
+              <span class="res-desc">Shared Ge'ez&ndash;English vocabulary for translation.</span></li>
+          <li><a href="https://huggingface.co/Hailay/fasttext-tigrinya" target="_blank" rel="noopener">fasttext-tigrinya</a>
+              <span class="res-desc">FastText word embeddings for Tigrinya.</span></li>
+          <li><a href="https://huggingface.co/Hailay/Geez_word2vec_skipgram.model" target="_blank" rel="noopener">Geez_word2vec_skipgram</a>
+              <span class="res-tag">sentence-similarity</span>
+              <span class="res-desc">Word2Vec skip-gram embeddings for Ge'ez script.</span></li>
+        </ul>
+
+        <h3 class="res-group">Datasets</h3>
+        <p class="res-note">Resources created and released as part of this research.</p>
+        <ul class="res-list">
+          <li><a href="https://github.com/hailaykidu/TigQA-Dataset" target="_blank" rel="noopener">TIGQA</a>
+              <span class="res-desc">Expert-annotated Tigrinya question-answering dataset
+              (<a href="https://arxiv.org/abs/2404.17194" target="_blank" rel="noopener">paper</a>).</span></li>
+          <li><a href="https://huggingface.co/datasets/Hailay/Translation-en2tig" target="_blank" rel="noopener">Translation-en2tig</a>
+              <span class="res-desc">English&ndash;Tigrinya parallel data for translation.</span></li>
+          <li><span class="res-plain">Multilingual summarization sets</span>
+              <span class="res-desc">Thirteen language-specific collections
+              (<a href="https://huggingface.co/datasets/Hailay/sum-ti" target="_blank" rel="noopener">ti</a>,
+               <a href="https://huggingface.co/datasets/Hailay/sum-am" target="_blank" rel="noopener">am</a>,
+               <a href="https://huggingface.co/datasets/Hailay/sum-om" target="_blank" rel="noopener">om</a>,
+               <a href="https://huggingface.co/datasets/Hailay/sum-so" target="_blank" rel="noopener">so</a>,
+               <a href="https://huggingface.co/datasets/Hailay/sum-sw" target="_blank" rel="noopener">sw</a>,
+               <a href="https://huggingface.co/datasets/Hailay/sum-ar" target="_blank" rel="noopener">ar</a>,
+               <a href="https://huggingface.co/datasets/Hailay/sum-hi" target="_blank" rel="noopener">hi</a>,
+               <a href="https://huggingface.co/datasets/Hailay/sum-te" target="_blank" rel="noopener">te</a>,
+               <a href="https://huggingface.co/datasets/Hailay/sum-si" target="_blank" rel="noopener">si</a>,
+               <a href="https://huggingface.co/datasets/Hailay/sum-my" target="_blank" rel="noopener">my</a>,
+               <a href="https://huggingface.co/datasets/Hailay/sum-th" target="_blank" rel="noopener">th</a>,
+               <a href="https://huggingface.co/datasets/Hailay/sum-ja" target="_blank" rel="noopener">ja</a>,
+               <a href="https://huggingface.co/datasets/Hailay/sum-de" target="_blank" rel="noopener">de</a>).</span></li>
+        </ul>
+        <p class="res-note">
+          Evaluation additionally uses external benchmarks &mdash; among them AfriSenti,
+          MasakhaNER, AmQA, and TiQuAD &mdash; which are not resources of mine.
+        </p>
+
+        <h3 class="res-group">Demos</h3>
+        <ul class="res-list">
+          <li><a href="https://huggingface.co/spaces/Hailay/movoc-tok-playground" target="_blank" rel="noopener">MoVoC Tokenizer Playground</a>
+              <span class="res-desc">Interactive comparison of subword segmentation for Ge'ez-script text.</span></li>
+          <li><a href="https://huggingface.co/spaces/Hailay/glot500-multilingual-sentiment-demo" target="_blank" rel="noopener">Multilingual Sentiment Demo</a>
+              <span class="res-desc">Interactive sentiment classification.</span></li>
+        </ul>
       </section>
 
       <!-- ===== PUBLICATIONS ===== -->
@@ -1086,7 +1327,7 @@
         <div class="timeline">
           <div class="timeline-item">
             <p class="tl-date">2025 – Present</p>
-            <p class="tl-title">Research Associate</p>
+            <p class="tl-title">Associated Researcher</p>
             <p class="tl-org">University of Zurich, Switzerland</p>
             <p class="tl-desc">Computational linguistics and digital humanities for Ge'ez-script languages, collaborating with Prof. Dr. Nesina Grütter, Semitic Linguistics, Faculty of Theology and Religious Studies.</p>
           </div>
